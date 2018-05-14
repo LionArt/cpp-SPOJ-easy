@@ -1,5 +1,5 @@
 /* Andrulewicz Artur
-KC009 - Odwracanie wyrazow
+JSZYCER - Szyfr Cezara
 2018-05-14
 */
 
