@@ -1,6 +1,6 @@
 /* Andrulewicz Artur
 BINOMS - Dwumiany
-2018-06-06
+2018-06-12
 */
 
 #include <iostream>
