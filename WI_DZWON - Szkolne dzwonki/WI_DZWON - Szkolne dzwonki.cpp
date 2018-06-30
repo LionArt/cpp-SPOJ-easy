@@ -1,6 +1,6 @@
 /* Andrulewicz Artur
 Nazwa zadania
-2018-06-28
+2018-06-30
 */
 
 #include <iostream>
