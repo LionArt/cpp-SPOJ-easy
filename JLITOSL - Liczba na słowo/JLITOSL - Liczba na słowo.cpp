@@ -1,6 +1,6 @@
 /* Andrulewicz Artur
 JLITOSL - Liczba na s³owo
-2018-06-28
+2018-06-30
 */
 
 #include <iostream>
