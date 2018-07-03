@@ -4,7 +4,6 @@ WZP09_2F - XV
 */
 
 #include <iostream>
-#include <cstdlib>
 
 using namespace std;
 
@@ -23,21 +22,13 @@ int main()
             {
                 for(int i=0;i<num.length();i++)
                 {
-                    number+=num[i];
-                    int temp=atoi(number.c_str());
-                    temp%=15;
-                    if(temp>9)
-                    {
-                        number='1';
-                        number+=(temp%10)+48;
-                    }
-                    else
-                    number=(temp%15)+48; // Dodawanie ASCII zastapilo stringstream, ktory znacznie wydluzal czas wykonania programu dla testow
+                    mod+=((num[i]-48)*10)%15;
+                    mod%=15;
                 }
             }
             else
-            number=" ";
-            if(number=="0")
+            mod=1;
+            if(mod==0)
             cout<<"TAK"<<endl;
             else
             cout<<"NIE"<<endl;
