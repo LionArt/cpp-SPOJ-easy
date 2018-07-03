@@ -19,19 +19,24 @@ int main()
         {
             int mod=0;
             string number="";
-            for(int i=0;i<num.length();i++)
+            if(num[num.length()-1]=='0' || num[num.length()-1]=='5') // Jesli koncowa liczba jest rozna od 0 lub 5, liczba nie jest podzielna przez 15
             {
-                number+=num[i];
-                int temp=atoi(number.c_str());
-                temp%=15;
-                if(temp>9)
+                for(int i=0;i<num.length();i++)
                 {
-                    number='1';
-                    number+=(temp%10)+48;
+                    number+=num[i];
+                    int temp=atoi(number.c_str());
+                    temp%=15;
+                    if(temp>9)
+                    {
+                        number='1';
+                        number+=(temp%10)+48;
+                    }
+                    else
+                    number=(temp%15)+48; // Dodawanie ASCII zastapilo stringstream, ktory znacznie wydluzal czas wykonania programu dla testow
                 }
-                else
-                number=(temp%15)+48; // Dodawanie ASCII zastapilo stringstream, ktory znacznie wydluzal czas wykonania programu dla testow
             }
+            else
+            number=" ";
             if(number=="0")
             cout<<"TAK"<<endl;
             else
