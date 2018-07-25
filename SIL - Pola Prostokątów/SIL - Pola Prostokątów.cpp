@@ -1,5 +1,5 @@
 /* Andrulewicz Artur
-SIL - Pola Prostok¹tów
+SIL - Pola ProstokÂ¹tÃ³w
 2018-07-25
 */
 
@@ -37,12 +37,6 @@ int main()
     Prostokat p1(Punkt(x1,y1),Punkt(x2,y2));
     cin>>x1>>y1>>x2>>y2;
     Prostokat p2(Punkt(x1,y1),Punkt(x2,y2));
-    if(p2.A.x<=p1.A.x && p2.B.x>=p1.B.x && p2.A.y<=p1.A.y && p2.B.y>=p1.B.y)
-    {
-        Prostokat temp=p2;
-        p2=p1;
-        p1=temp;
-    }
     // Prostokaty zaslaniaja sie calkowicie
     if(p1.A.x==p2.A.x && p1.B.x==p2.B.x && p1.A.y==p2.A.y && p1.B.y==p2.B.y)
     {
