@@ -9,14 +9,6 @@ CHAOS - Godzina chaosu
 
 using namespace std;
 
-template<typename T>
-string toStr(const T& obj)
-{
-    std::stringstream ss;
-    ss<<obj;
-    return ss.str();
-}
-
 class Time
 {
     public:
@@ -121,12 +113,9 @@ void getPalindrome(Time *t)
     }
     else
     {
-        string temp=toStr(h);
         string temp2;
-        for(int i=1;i>=0;i--)
-        {
-            temp2+=temp[i];
-        }
+        temp2+=(h%10)+48;
+        temp2+=(h/10)+48;
         int temp_i=atoi(temp2.c_str());
         if(m<temp_i)
         {
@@ -135,12 +124,9 @@ void getPalindrome(Time *t)
         else
         {
             h++;
-            string temp=toStr(h);
             temp2="";
-            for(int i=1;i>=0;i--)
-            {
-                temp2+=temp[i];
-            }
+            temp2+=((h%10)+48);
+            temp2+=((h/10)+48);
             int temp_i=atoi(temp2.c_str());
             m=temp_i;
         }
