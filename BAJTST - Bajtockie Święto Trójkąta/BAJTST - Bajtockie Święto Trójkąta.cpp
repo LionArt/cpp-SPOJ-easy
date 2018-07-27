@@ -1,5 +1,5 @@
 /* Andrulewicz Artur
-BAJTST - Bajtockie Œwiêto Trójk¹ta
+BAJTST - Bajtockie Å’wiÃªto TrÃ³jkÂ¹ta
 2018-07-27
 */
 
@@ -9,7 +9,7 @@ BAJTST - Bajtockie Œwiêto Trójk¹ta
 
 using namespace std;
 
-//Wzór na pole dowolnego trojkata Herona na podstawie znajomosci dlugosci 3 bokow
+//WzÃ³r Herona na pole dowolnego trojkata na podstawie znajomosci dlugosci 3 bokow
 double getPole(int a,int b,int c)
 {
     if((a<(b+c)) && (b<(a+c)) && (c<(a+b)))
