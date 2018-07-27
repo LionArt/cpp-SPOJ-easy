@@ -10,10 +10,11 @@ using namespace std;
 
 class Osoba
 {
-    public:
-    string imie;
+    private:
     int wzrost;
     int waga;
+    public:
+    string imie;
     Osoba(string imie,int waga,int wzrost):imie(imie),waga(waga),wzrost(wzrost){}
     double getBMI() const
     {
