@@ -1,5 +1,5 @@
 /* Andrulewicz Artur
-KART - Kartkówka
+KART - KartkÃ³wka
 2018-07-27
 */
 
@@ -17,11 +17,11 @@ int main()
         int mod=5;
         cin>>liczba;
         int zera=0;
-        // Przy kolejnej potêdze 5, liczba zer zwiêksza siê o 1
-        //od 1-24, liczba zer zwiêksza siê co 5
-        //przy 25 zwiêksza siê jeszcze o 1 dodatkowo (20! lub 24! da nam 4 zera na koñcu, 25! da nam 6 zer)
-        //przy 125 zwiêkszas siê jeszcze o 2, bo zwiêksza siê o 1 ze wzglêdu na kolejn¹ wielokrotnoœæ 5 oraz
-        // o 1 ze wzglêdu na pierwsz¹ wielokrotnoœæ 125 (kolejnej potêgi 5)
+        // Przy kolejnej potÄ™dze 5, liczba zer zwiÄ™ksza siÄ™ o 1
+        //od 1-24, liczba zer zwiÄ™ksza siÄ™ co 5
+        //przy 25 zwiÄ™ksza siÄ™ jeszcze o 1 dodatkowo (20! lub 24! da nam 4 zera na koÅ„cu, 25! da nam 6 zer)
+        //przy 125 zwiÄ™ksza siÄ™ jeszcze o 2, bo zwiÄ™ksza siÄ™ o 1 ze wzglÄ™du na kolejnÄ… wielokrotnoÅ›Ä‡ 5 oraz
+        // o 1 ze wzglÄ™du na pierwszÄ… wielokrotnoÅ›Ä‡ 125 (kolejnej potÄ™gi 5)
         while(liczba>=mod)
         {
             zera+=liczba/mod;
