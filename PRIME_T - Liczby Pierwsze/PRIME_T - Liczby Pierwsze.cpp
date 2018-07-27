@@ -3,33 +3,34 @@ PRIME_T - Liczby Pierwsze
 2017-10-16
 */
 
-#include <iostream>
+#include <cstdio>
 
 using namespace std;
 
-bool pierwsza(int n)
-{
-    if(n<2)
-    return false;
-
-    for(int i=2;i*i<=n;i++)
-    {
-        if (n%i==0)
-        return false;
-    }
-    return true;
-}
 int main()
 {
     int t,n;
-    cin>>t;
+    scanf("%d",&t);
     for(int i=0;i<t;i++)
     {
-        cin>>n;
-        if(pierwsza(n))
-        cout<<"TAK"<<endl;
+        scanf("%d",&n);
+        bool isPrime=true;
+        if(n<2)
+		isPrime=false;
+		else
+		{
+	    	for(int i=2;i*i<=n;i++)
+	    	{
+	        	if (n%i==0)
+	        	{
+	        		isPrime=false;
+	        		break;	
+	        	}
+			}
+		}
+		if(isPrime)
+        printf("TAK\n");
         else
-        cout<<"NIE"<<endl;
+        printf("NIE\n");
     }
-    return 0;
 }
